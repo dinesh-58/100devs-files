@@ -53,8 +53,9 @@ table {
 */
 body {
   color: #888;
-  font: 300 16px/20px "Open Sans", Helvetica, Arial, sans-serif ;
+  font: 300 16px/20px "Lato","Open Sans", Helvetica, Arial, sans-serif ;
 }
+
 h1, h2, h3, h4 {
   color: #648880;
 }
@@ -77,6 +78,7 @@ h5 {
   color: #a9b2b9;
   font-size: 14px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 strong {
@@ -85,10 +87,9 @@ strong {
 cite, em {
   font-style: italic;
 }
-
 /*  
   ========================
-  Grid 
+  Links 
   ========================
 */  
 a:hover {
@@ -96,6 +97,10 @@ a:hover {
 }
 a {
   color: #648880;
+  text-decoration: none;
+}
+p a {
+  border-bottom: 1px solid #dfe2e5;
 }
 
 /*  
@@ -143,10 +148,25 @@ a {
 */  
 
 .logo {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  border-top: 4px solid #648880;
   float:left;
+  font-size: 48px;
+  line-height: 44px;
   text-align: center;
-  border-top: 1px solid;
   padding: .5% 0%;
+}
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
 }
 /*  
   ========================
@@ -164,13 +184,18 @@ a {
   clear:both;
 }
 
-.primary-footer small {
-  float:left;
-}
-
 .primary-footer {
   padding-top: 44px;
   padding-bottom: 44px;
+  color: #648880;
+  font-size: 14px;
+}
+.primary-footer small {
+  float:left;
+  font-weight: 400;
+}
+.navi {
+  text-align: right;
 }
 /*  
   ========================
@@ -206,5 +231,17 @@ h1, h3, h4, h5, p {
 */
 
 .hero {
-  padding: 22px 80px 66px 80px;
+  padding: 80px 80px 66px 80px;
+  line-height: 44px;
+  text-align: center;
+}
+.hero h2{
+  font-size: 36px;  
+} 
+.hero p {
+  font-size: 24px;
+  font-weight: 100;
+}
+.teaser a:hover h3{
+  color:#a9b2b9;
 }
