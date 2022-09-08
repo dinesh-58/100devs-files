@@ -152,7 +152,7 @@ p a {
   border: 1px solid #dfe2e5;
   border-radius: 5px;
   margin-top: 88px;
-  padding: 22px 0;
+  padding-bottom: 22px;
   text-align: center;
 }
 .speaker {
@@ -166,6 +166,8 @@ p a {
 
 .logo {
   font-weight: 100;
+  /* display: block; */
+  margin-top: -20px;
   text-transform: uppercase;
   letter-spacing: .5px;
   border-top: 4px solid #648880;
@@ -176,14 +178,17 @@ p a {
   padding: .5% 0%;
 }
 .tagline {
-  margin: 66px 0 22px 0;
+  margin: 80px 0 10px 0;
   text-align: right;
+  vertical-align: bottom;
 }
 .primary-nav {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: .5px;
   text-transform: uppercase;
+  vertical-align: bottom;
+  margin-top: 35px;
 }
 /*  
   ========================
@@ -236,6 +241,7 @@ p a {
   background-color: white;
   min-width: 960px;
   padding: 66px 0 44px 0;
+  clear: both;
 }
 .row-alt {
   clear:both;
@@ -314,4 +320,34 @@ h1, h3, h4, h5, p {
 }
 .teaser a:hover h3{
   color:#a9b2b9;
+}
+.teaser img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 22px; 
+}
+.speaker-info img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  vertical-align: top;
+  margin: -66px auto 22px auto;
+  object-fit: cover; 
+}
+
+/*  
+  ========================
+  Venue 
+  ========================
+*/
+
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 22px;
+}
+.venue-map {
+  height: 264px;
 }
