@@ -1,0 +1,8 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.cover story{
+    background-image: "assets/images/israel-uae.jpg";
+}
