@@ -3,6 +3,46 @@
     margin: 0;
     padding: 0;
 }
-.cover story{
-    background-image: "assets/images/israel-uae.jpg";
+.welcome-message {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+.date {
+    text-align: right;
+    font-weight: light;
+    font-size: 18px;
+}
+
+/* .row {
+    height: 180px;
+} */
+.story-cover{
+    width: 48%;
+    height: 100%;
+    background-image: url("../images/israel-uae.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+    border: 1px solid black;
+}
+/* .thumbnail-text {
+    height:50%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5, 0.7));
+} */
+a{
+    color:white;
+    text-decoration: none;
+}
+.story-cover h3{
+    padding-top: 30%;
+}
+.category {
+    display: inline-block; 
+    margin: 10px;
+    padding-left: 5px;
+    border-left: 3px solid var(--category-color);
+}
+.news {
+    --category-color: red;
 }
