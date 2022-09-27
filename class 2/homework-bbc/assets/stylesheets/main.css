@@ -26,12 +26,13 @@ header {
     font-size: 16px;
     padding: 2px;
 }
+
 .sign-in span {
     text-align: left;
     padding-right: 60px;
 }
-.sign-in-icon {
-    height: 1.3em;
+.icon {
+    height: 1em;
     vertical-align: middle;
     /* margin: auto; */
 }
@@ -69,12 +70,44 @@ a{
 .story-cover h3{
     padding-top: 30%;
 }
+
+/*  ===================
+    Colors according to category
+    ===================
+*/
 .category {
     display: inline-block; 
     margin: 10px;
     padding-left: 5px;
     border-left: 3px solid var(--category-color);
 }
+.category-nav:hover {
+    border-bottom: 2px solid var(--category-color);
+}
+.sign-in {
+    --category-color: rgb(0, 140, 255);
+}
+.home, .more {
+    --category-color: white;
+}
 .news {
     --category-color: red;
+}
+.sport {
+    --category-color: yellow;
+}
+.reel {
+    --category-color: rgb(0, 217, 255);
+}
+.worklife {
+    --category-color: rgb(0, 75, 136);
+}
+.travel {
+    --category-color: green;
+}
+.future {
+    --category-color: rgb(117, 144, 202);
+}
+.culture {
+    --category-color: purple;
 }
