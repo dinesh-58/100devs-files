@@ -31,7 +31,9 @@
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5, 0.7));
 } */
 a{
-    color:white;
+    /* color:white; */
+    /* ! set this only for text that goes inside images*/
+    /* ! i.e. story-cover & story-secondary */
     text-decoration: none;
 }
 .story-cover h3{

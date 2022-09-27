@@ -11,24 +11,27 @@
 <body>
     <header class="primary-header">
         <nav class="primary-nav">
-            <a class="logo" href="index.html">
-                <ul> <!--or image-->
+            <a href="index.html">
+                <ul class="logo" > <!-- ? or image for simplicity-->
                     <li>B</li>
                     <li>B</li>
                     <li>C</li>
                 </ul>
             </a>
-            <a>Sign in</a>
+            <a>
+                <img src="" class="sign-in-icon">
+                <span>Sign in</span>
+            </a>
             <ul>
-                <li><a>Home</a></li>
-                <li><a>News</a></li>
-                <li><a>Sport</a></li>
-                <li><a>Reel</a></li>
-                <li><a>Worklife</a></li>
-                <li><a>Travel</a></li>
-                <li><a>Future</a></li>
-                <li><a>Culture</a></li>
-                <li><a>More</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Reel</a></li>
+                <li><a href="#">Worklife</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Future</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">More</a></li>
             </ul>
             <form>
                 Search
@@ -38,10 +41,14 @@
 
 
     <h2>Welcome to BBC.com</h2>
-    <h2 class="date">Today's date</h2> <!--maybe function to get date?-->
+    <h2 class="date">Thursday, 13 August</h2> <!--maybe function to get date?-->
     
-    <div class="primary-row"> <!-- prob redundant -->
+    <div class="primary-row"> <!-- ? prob redundant -->
         <section class="story-cover">
+
+            <img src="assets/images/israel-uae.jpg">
+            <!-- TODO for below 2 anchor tags in css, set position: absolute  -->
+            <!-- TODO do same for anchors in story-secondary -->
             <a href="#">
                 <h1>Israel & UAE strike historic peace deal</h1>
                 <span>Israel & the UAE agree to normalise relations, marking the third Israel-Arab peace deal.</span>
@@ -50,28 +57,35 @@
         </section>
 
         <section class="story-secondary">
+            <img src="assets/images/americans-go-home.webp">
             <a href="#">
-                <h1></h1>
+                <h1>Americans, go home: Tension at Canada-US border</h1>
             </a>
-            <a class="category reel">Canada</a>
+            <a class="category news">Canada</a>
         </section>  
+
         <section class="story-secondary">
+            <img src="assets/images/vaccinate-7-billion.webp">
             <a href="#">
-                <h1></h1>
+                <h1>How will the world vaccinate seven billion people?</h1>
             </a>
-            <a class="category"></a>
+            <a class="category news">Health</a>
         </section>  
+        
         <section class="story-secondary">
+            <img src="assets/images/online-productivity.webp">
             <a href="#">
-                <h1></h1>
+                <h1>The online 'productivity gyms'</h1>
             </a>
-            <a class="category"></a>
+            <a class="category worklife">Worklife</a>
         </section>  
+        
         <section class="story-secondary">
+            <img src="assets/images/folk-singer.webp">
             <a href="#">
-                <h1></h1>
+                <h1>The folk singer murdered for his music</h1>
             </a>
-            <a class="category"></a>
+            <a class="category culture"></a>
         </section>  
     </div>
 
@@ -79,25 +93,27 @@
         <a class="category overall" href="#">News</a>
         <section class="story-additional">
             <a href="#">
-                <img src="">
-                <h1></h1>
-                <span></span>
+                <img src="assets/images/biden-harris.webp">
+                <h1>Biden and Harris say Trump has left US 'in tatters'</h1>
+                <span>Joe Biden and running mate Kamala Harris call President Donald Trump a "whining" incompetent leader.</span>
             </a>
-            <a class="category" href="#"></a>
+            <a class="category news" href="#">US election 2020</a>
         </section>
+
         <section class="story-additional">
             <a href="#">
-                <img src="">
-                <h1></h1>
-                <span></span>
+                <img src="assets/images/women-form.webp">
+                <h1>Women form 'solidarity chains' in Belarus protests</h1>
+                <span>Women take to streets of Minsk dressed in white as they demand an end to police brutality.</span>
             </a>
-            <a class="category" href="#"></a>
+            <a class="category news" href="#">Europe</a>
         </section>
+
         <section class="story-additional">
             <a href="#">
-                <img src="">
-                <h1></h1>
-                <span></span>
+                <img src="assets/images/trump-says.jpg">
+                <h1>Trump says low-pressure shower heads won't wash</h1>
+                <span>The US calls for rules to be eased after Donald Trump complained of issues washing his hair</span>
             </a>
             <a class="category" href="#"></a>
         </section>
