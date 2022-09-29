@@ -6,6 +6,14 @@
 header {
     background-color: black;
 }
+a{
+    text-decoration: none;
+}
+ .primary nav {
+    padding: 5px;
+    /* ! done so there's a little bit of the black background below the links.
+    ! doesn't work */
+}
 .primary-nav ul, .primary-nav li, .primary-nav form, 
 .primary-nav input, .primary-nav a{
     display: inline-block;
@@ -36,9 +44,13 @@ header {
     vertical-align: middle;
     /* margin: auto; */
 }
+
+/*  ====================
+    ! Primary row 
+    ====================
+*/
 .primary-row h2 {
     display: inline-block;
-    vertical-align: middle;
 }
 .date {
     float: right;
@@ -48,31 +60,70 @@ header {
 /* .row {
     height: 180px;
 } */
-.story-cover{
+
+.story img {
+    width: 100%;
+}
+
+.cover, .container-highlights {
     width: 48%;
-    height: 100%;
-    background-image: url("../images/israel-uae.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    float: left;
+    /* height: 100%; */
     margin: 5px;
     border: 1px solid black;
+    /* ! border is just to see how area of section */
+    /* TODO delete later */
 }
-/* .thumbnail-text {
-    height:50%;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5, 0.7));
+/* .cover a{
 } */
-a{
-    /* color:white; */
-    /* ! set this only for text that goes inside images*/
-    /* ! i.e. story-cover & story-secondary */
-    text-decoration: none;
+.link-news {
+    height: 80%;
+    position: relative;
+    /* display: block; */
 }
-.story-cover h3{
-    padding-top: 30%;
+.link-news h1, .link-news span, .highlights h1, .cover .category, .highlights .category{
+    position: absolute;
+    /* color: white; */
+    /* TODO uncomment this section later to turn text white */
+
+}
+.link-news h1 {
+    /* top: 100px; */
+    top: 0px;
+    left: 10px;
+}
+.cover {
+    border: 1px solid red;
+}
+img {
+    /* display: none; */
+}
+.highlights {
+    width: 48%;
+    float: left;
+}
+.highlights h1 {
+    top: 100px;
+    /* font-size: 10%; */
+}
+/* .cover a, .highlights a{
+    color:white;
+} */
+/* .extra-news {
+    
+} */
+
+/*  =================== 
+    ! Second row
+    ===================
+*/
+.extra-news{
+    width: 30%;
+    float: left;
 }
 
 /*  ===================
-    Colors according to category
+    ! Colors according to category
     ===================
 */
 .category {
