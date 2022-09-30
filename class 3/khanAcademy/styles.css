@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 } 
+
+/*  ================================== 
+    ! Header/ Navigation bar
+    ================================== 
+ */
 .header-nav {
     border-bottom: 1px solid black;
     font-size: 18px;
@@ -25,9 +30,11 @@ a {
     vertical-align: middle;
     margin-bottom: 5px;
     height: 2em;
+    padding: 5px;
 }
 .header-nav input::placeholder {
     color:rgb(0, 110, 255);
+    padding: 5px;
 }
 .icon {
     height: 1em;
@@ -37,18 +44,95 @@ a {
     margin: 0 260px 0 170px;
     font-size: 24px;
 } 
+
+/*  ================================== 
+    ! Rows
+    ================================== 
+ */
 .row {
     clear: both;
     height: 520px;
-    border: 1px solid red;
 }
 .container-half {
-    width: 48%;
+    width: 50%;
     float: left;
-    border: 1px solid blue;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .student {
-    border: 1px solid green;
     margin: auto 10%;
     width: 80%;   
+}
+.description {
+    margin: 115px auto;
+}
+h1 {
+    font-weight: 600;
+    font-size: 53px;
+}
+.container-half p {
+    font-size: 20px;
+}
+.links-for {
+    margin-top: 20px;
+}
+.links-for li {
+    display: inline-block;
+    padding: 1px;
+}
+.links-for li:hover {
+    border: 1px solid rgb(0, 110, 255);
+    border-radius: 5px;
+}
+.links-for a {
+    display: inline-block;
+    height: 40px;
+    width: 170px;
+    background-color: rgb(0, 110, 255);
+    border-radius: 5px;
+    /* border: 3px solid red ; */
+    text-align: center;
+    font-size: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    vertical-align: middle;
+    color: white;
+}
+
+/*  ================================== 
+    ! Row 2?
+    ================================== 
+ */
+.why-works {
+    background-color: rgba(226, 223, 223, 0.4);
+    padding-top: 100px;
+}
+h2 {
+    font-size: 44px;
+    text-align: center;
+}
+.list-reason {
+    width: 90%;
+    margin: auto;
+}
+.reason {
+    display: inline-block;
+    width: 300px;
+    margin: 35px;
+    vertical-align: top;
+}
+.reason:first-child, .reason:last-child {
+    margin-left: 70px;
+}
+.reason img {
+    height: 100px;
+    vertical-align: middle;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+.reason h3 {
+  font-size: 25px; 
+}
+.reason h3, .reason p {
+    text-align: center; 
 }
