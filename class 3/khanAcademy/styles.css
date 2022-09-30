@@ -1,0 +1,54 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.header-nav {
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+}
+.header-nav li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+    font-weight: bold;
+}
+.header-nav input{
+    border: 1px solid rgb(226, 223, 223);
+    border-radius: 3px;
+    background-color: rgb(226, 223, 223);
+    vertical-align: middle;
+    margin-bottom: 5px;
+    height: 2em;
+}
+.header-nav input::placeholder {
+    color:rgb(0, 110, 255);
+}
+.icon {
+    height: 1em;
+    vertical-align: text-bottom;
+}
+.logo {
+    margin: 0 260px 0 170px;
+    font-size: 24px;
+} 
+.row {
+    clear: both;
+    height: 520px;
+    border: 1px solid red;
+}
+.container-half {
+    width: 48%;
+    float: left;
+    border: 1px solid blue;
+}
+.student {
+    border: 1px solid green;
+    margin: auto 10%;
+    width: 80%;   
+}
