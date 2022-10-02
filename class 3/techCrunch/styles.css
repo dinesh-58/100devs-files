@@ -1,0 +1,51 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 20%;
+    height: 100vmax;
+    float: left;
+    position: sticky;
+    /* TODO make the header stick for entire page 
+    when page is longer than vmax*/
+    border: 1px solid red;
+}
+header li {
+    list-style-type: none;
+}
+.row {
+    width: 60%;
+    float: left;
+}
+.headline {
+    width: 70%;
+    float: left;
+}
+.more {
+    border: 1px solid blue;
+    width: 30%;
+    float: left;
+}
+.story-more {
+    border-bottom: 1px solid grey;
+}
+.idk-box {
+    width: 20%;
+    float: left;
+    border: 2px solid green;
+}
+.box-half {
+    width: 50%;
+} 
+.idk-box a {
+    text-align: center;
+}
+.title {
+    display: block;
+}
+.story-latest * {
+    float: left;
+    width: 33.33%;
+}
