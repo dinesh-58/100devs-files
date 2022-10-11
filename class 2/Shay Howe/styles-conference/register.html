@@ -29,7 +29,48 @@
             </div>
         </section>
 
-        
+        <section class="row">
+            <div class="grid">
+                <section class="col-2-3">
+                    <h2>Purchase</h2>
+                    <h5>$99 per pass</h5>
+                    <p>Purchase a conference pass using the form to the right</p>
+                    <h4>Reasons to visit: </h4>
+                    <ul class="why-attend">
+                        <li>20+ world-class speakers</li>
+                        <li>Free food</li>
+                        <li>and much more ...</li>
+                    </ul>
+                </section>
+
+                <form class="col-1-3" action="#" method="post">
+                    <fieldset class="register-group">
+                        <label>
+                            Name: <input type="text" name="name" placeholder="Full Name" required>
+                        </label>
+                        <label>
+                            Email address: <input type="email" name="email" placeholder="yourname@email.com" required>
+                        </label>
+                        <label>
+                            No. of conference passes:
+                            <select name="num-passes" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </label>
+                        <label>
+                            Comments: <textarea name="comments"></textarea>
+                        </label>
+                    </fieldset>
+
+                    <input class="btn btn-default" type="submit" name="submit" value="Purchase">
+                </form>
+            </div>
+        </section>
+
         <footer class="container">
             <small>&copy;Styles Conference</small>
             <nav>
