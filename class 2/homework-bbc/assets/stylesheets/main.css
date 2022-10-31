@@ -76,13 +76,14 @@ a{
 }
 /* .cover a{
 } */
-.link-news {
+.link-news a{
     height: 80%;
     position: relative;
     /* display: block; */
 }
 .link-news h1, .link-news span, .highlights h1, .cover .category, .highlights .category{
     position: absolute;
+    bottom: 10px;
     /* color: white; */
     /* TODO uncomment this section later to turn text white */
 
