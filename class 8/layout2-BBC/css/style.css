@@ -36,7 +36,35 @@ header {
 footer {
 
 }
-
+.primary-row {
+  height: 200px;
+}
+.primary-row > section {
+  width: 50%;
+  float: left;
+  border: 1px solid black;
+  height: 100%;
+}
+.extra-news > section{
+  width: 50%;
+  float: left;
+  border: 1px solid black;
+  height: 50%;
+}
+.more-news > section{
+  width: 33.33%;
+  float: left;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+section {
+}
+nav li {
+  float: left;
+  list-style-type: none;
+  margin: 1em;
+}
+.sign-in {
+  margin-right: 2em;
+}
