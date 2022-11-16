@@ -22,7 +22,7 @@
 /*******************************************/
 
 body {
-
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -40,17 +40,55 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+header {
+  padding: 2%;
+}
 .primary-row, .primary-row a {
   background-color: rgb(127, 137, 170);
   color: white;
   text-align: center;
 }
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-left {
+  float: left;
+  margin: 1%;
+}
+a.nav-right {
+  float: right;
+  background-color: white;
+  color: rgb(127, 137, 170);
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: .5em;
+  box-sizing: border-box;
+}
+.nav-logo {
+  height: 2em;
+  vertical-align: middle;
+}
+.icon {
+  height: 1.3em;
+  vertical-align: middle;
+}
+.row {
+  padding: 3% 0;
+}
 .primary-row p {
   width: 80%;
   margin: auto;
 }
+.primary-row {
+  padding-top: 0;
+}
 h2, h3 {
   text-align: center;
+}
+.watch-vid {
+  display: inline-block;
+  margin: 2% 0;
 }
 .row p{
   width: 50%;
@@ -80,4 +118,5 @@ header a,
 h1, 
 h2 {
   text-transform: uppercase;
+  /* font-weight: 400; */
 }
