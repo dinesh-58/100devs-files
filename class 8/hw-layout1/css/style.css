@@ -49,11 +49,6 @@ footer>nav {
 .row {
   min-height: 60vh;
 } 
-@media screen and (max-width: 900px) { 
-  .row {
-    min-height: 40vh;
-  }  
-}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -119,11 +114,11 @@ h2, h3 {
   width: 50%;
   float: left;
   height: 600px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .img-placeholder {
   box-sizing: content-box;
-  height: 30%;
+  max-height: 30%;
   aspect-ratio: 16/9;
   background-color: rgb(127, 137, 170);
   margin: 36px auto;
@@ -163,7 +158,7 @@ h2 {
   /* font-weight: 400; */
 }
 h1 {
-  font-size: 4rem;
+  max-font-size: 4rem;
 }
 .primary-row p{
   font-size: 1.5rem;
@@ -176,4 +171,27 @@ h3 {
 }
 footer span{
   line-height: 1.3em;
+}
+/* Responsive layouts */
+@media screen and (max-width: 1000px) { 
+  .row {
+    min-height: 40vh;
+  }  
+  .alt-row > section {
+    height: 670px;
+  }
+  .img-placeholder {
+    max-height: 20%;
+  }
+  footer nav, .contact-info {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .alt-row > section {
+    width: 100%;
+  }
+  footer nav, .contact-info {
+    width: 100%;
+  }
 }
