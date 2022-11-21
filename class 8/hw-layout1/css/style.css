@@ -49,6 +49,11 @@ footer>nav {
 .row {
   min-height: 60vh;
 } 
+@media screen and (max-width: 900px) { 
+  .row {
+    min-height: 40vh;
+  }  
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -108,16 +113,20 @@ h2, h3 {
 }
 .alt-row {
   background-color: rgb(196, 200, 207);
+  padding: 0;
 }
 .alt-row > section{
   width: 50%;
   float: left;
+  height: 600px;
+  overflow: hidden;
 }
 .img-placeholder {
-  height: 250px;
+  box-sizing: content-box;
+  height: 30%;
   aspect-ratio: 16/9;
   background-color: rgb(127, 137, 170);
-  margin: auto;
+  margin: 36px auto;
 }
 footer {
   background-color: rgb(1, 24, 58);
