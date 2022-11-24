@@ -32,7 +32,10 @@ body {
 header {
 
 }
-
+.half-width {
+  width: 50%;
+  float: left;
+}
 footer {
 
 }
@@ -40,3 +43,9 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+nav ul {
+  float: right;
+}
+nav li {
+  display: inline;
+}
