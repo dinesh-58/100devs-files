@@ -5,7 +5,7 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
+     content: "";
      display: block;
      clear: both;
      visibility: hidden;
@@ -16,15 +16,28 @@
 .clear {
 	clear: both;
 }
-
+:root {
+  --brand-color: rgb(29, 24, 68);
+}
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+a {
+  text-decoration: none;
+  /* box-sizing: content-box; */
+  padding: .5em;
+}
 body {
 
 }
-
+svg path {
+  fill: black;
+  vertical-align: middle;
+}
+h6 {
+  margin: 0;
+  /* display: inline-block; */
+}
 
 /******************************************
 /* LAYOUT
@@ -48,4 +61,39 @@ nav ul {
 }
 nav li {
   display: inline;
+}
+nav li > a {
+  color: white;
+  font-weight: bold;
+}
+.logo {
+  fill: white;
+}
+.btn-blue, .btn-gray, .btn-white {
+  border-radius: 5%;
+}
+.btn-gray {
+  background-color: gray;
+  color: white;
+}
+.btn-white{
+  background-color: white;
+  color: var(--brand-color);
+}
+.btn-blue {
+  background-color: var(--brand-color);
+  color: white;
+}
+main, header {
+  background-color: var(--brand-color);
+  color: white;
+}
+.list-companies {
+  float: right;
+}
+.list-companies li {
+  display: inline-block;
+}
+.dropbox {
+  padding: 0;
 }
