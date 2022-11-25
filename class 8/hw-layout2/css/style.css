@@ -27,9 +27,6 @@ a {
   /* box-sizing: content-box; */
   padding: .5em;
 }
-body {
-
-}
 svg path {
   fill: black;
   vertical-align: middle;
@@ -49,6 +46,15 @@ header {
   width: 50%;
   float: left;
 }
+body > * {
+  padding: 2% 5%;
+}
+/* .half-width:nth-child(odd) {
+  padding-left: 5%;
+}
+.half-width:nth-child(even) {
+  padding-right: 5%;
+} */
 footer {
 
 }
@@ -96,4 +102,57 @@ main, header {
 }
 .dropbox {
   padding: 0;
+}
+.brag-box {
+  width: 25%;
+  aspect-ratio: 20/9;
+  margin: 3%;
+  float: left;
+  background-color: white;
+}
+.brag-box {
+  text-align: center;
+}
+.checkbox {
+  clear: both;
+  /* display: inline-block; */
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid black;
+  border-radius: .5rem;
+}
+.brag-box .checkbox {
+  float: none;
+}
+.vomit-grid {
+  background-color: var(--brand-color);
+}
+.arr-left {
+  float: left;
+  vertical-align: middle;
+}
+.profile {
+  vertical-align: middle;
+  float: left;
+}
+.arr-right {
+float: left;
+  vertical-align: middle;
+}
+.testimonial {
+  float: left;
+  max-width: 90%;
+}
+.banner {
+  width: 100%;
+  background-color: var(--brand-color);
+  clear: both;
+}
+.banner > section:nth-of-type(2) {
+  height: 75px;
+  line-height: 75px;
+}
+.banner span {
+  color: white;
 }
