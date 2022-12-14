@@ -31,7 +31,9 @@ h1 {
   font-size: 4rem;
   padding-top: 5%;
 }
-
+ul {
+  padding-inline-start: 0px;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -61,6 +63,7 @@ nav li {
   display: inline;
 }
 nav section {
+  /* display: inline-block; */
   float: right;
 }
 nav ul, nav .icon {
@@ -107,4 +110,33 @@ nav ul, nav .icon {
 }
 .profile-pic {
   border-radius: 50%;
+}
+.grid1-4 {
+  width: 20%;  
+  /* float: left; */
+  text-align: left;
+  margin: 1.5%;
+}
+.grid1-4 img, .grid1-1 img {
+  object-fit: cover;
+  width: 100%;
+}
+.grid1-1 {
+  width: 80%;
+}
+@media screen and (max-width:1200px) {
+  nav section {
+    width: 90%;
+  }
+  nav > a {
+    width: 10%;
+  }
+  nav ul {
+    display: inline-block;
+  }
+}
+@media screen and (max-width:768px) {
+  .grid1-4 {
+    width: 40%;
+  }  
 }
