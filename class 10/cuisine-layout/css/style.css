@@ -24,7 +24,13 @@
 body {
 
 }
-
+main> * {
+  margin: 2% 5%;
+}
+h1 {
+  font-size: 4rem;
+  padding-top: 5%;
+}
 
 /******************************************
 /* LAYOUT
@@ -41,5 +47,64 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 main {
-  background: url('https://img.freepik.com/premium-photo/heap-tomatoes-wooden-table-with-negative-space-left-tomatoes-wooden-background-negative-spa_579344-42.jpg?w=2000');
+  background: url('https://as1.ftcdn.net/v2/jpg/00/79/32/64/1000_F_79326422_T30whoKlWCzbI5Pa55MJqHif4HvLBX4U.jpg') no-repeat;
+  background-size: cover;
+}
+svg, main span {
+  vertical-align: middle;
+  margin: 2% 5px;
+}
+main span {
+  margin-right: 20px;
+}
+nav li {
+  display: inline;
+}
+nav section {
+  float: right;
+}
+nav ul, nav .icon {
+  float: left;
+}
+.icon {
+  vertical-align: middle;
+  height: 1em;
+}
+.row {
+  height: 500px;
+}
+.about-section{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clickable {
+  cursor: pointer; 
+  border-radius: 3px;
+  background-color: rgb(255, 136, 0);
+  color: white;
+}
+.clickable .icon, .clickable path {
+  color: rgb(248, 202, 116);
+  fill: white;
+}
+.center-all * {
+  text-align: center;
+}
+.center-all span, .center-all svg, .center-all img{
+  display: block;
+  margin: auto;
+}
+.center-all li{
+  display: inline-block;
+}
+.center-all svg {
+  max-width: 5%;
+}
+.half-width {
+  float: left;
+  width: 50%;
+}
+.profile-pic {
+  border-radius: 50%;
 }
