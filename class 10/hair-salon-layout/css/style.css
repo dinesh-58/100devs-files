@@ -21,10 +21,15 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+html {
+  font-size: 62.5%;
 }
-
+body {
+  font-size: 1.6rem;
+}
+body > * {
+  padding: 0 5%;
+}
 
 /******************************************
 /* LAYOUT
@@ -40,3 +45,82 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+nav li , nav ul{
+  display: inline-block;
+  margin: 0 1em;
+
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.box {
+  padding: 1rem;
+  margin: 2rem 0;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+}
+a.box::before {
+  content: "- ";
+}
+.box-primary {
+  background-color: black;
+  color: white;
+}
+.box-alt {
+  background-color: white;
+  color: black;
+}
+.icon {
+  height: 1em;
+  vertical-align: baseline;
+}
+.icon-services {
+  height: 3em;
+}
+main {
+  background-image: url("https://freedesignfile.com/upload/2017/12/Pretty-girl-hairstyle-Stock-Photo-03.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  min-height: 400px;
+}
+.three-columns > section{
+  width: 33%;
+  text-align: center;
+  vertical-align: top;
+}
+.three-columns > section,
+.name-offset {
+  display: inline-block;
+  margin: auto;
+} 
+.three-columns span {
+  width: 70%;
+  display: inline-block;
+}
+.name-offset {
+  top: -40px;
+  position: relative;
+}
+.half-width {
+  width: 50%;
+  float: left;
+  padding: 5%;
+}
+.img-500 {
+  max-width: 100%;
+}
+h5 {
+  margin: .5rem;
+}
+.img-gallery img{
+  float: left;
+}
+.lookbook-title {
+  text-align: center;
+}
