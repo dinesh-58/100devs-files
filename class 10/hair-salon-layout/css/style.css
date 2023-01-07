@@ -29,8 +29,11 @@ body {
 }
 body > * {
   padding: 0 5%;
+  margin-top: 10%;
 }
-
+header, main {
+  margin-top: 1%;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -48,7 +51,6 @@ footer {
 nav li , nav ul{
   display: inline-block;
   margin: 0 1em;
-
 }
 nav a {
   text-decoration: none;
@@ -88,6 +90,9 @@ main {
   background-position: right;
   background-size: cover;
   min-height: 400px;
+}
+.row-alt {
+  background-color: rgb(224, 224, 224);
 }
 .three-columns > section{
   width: 33%;
