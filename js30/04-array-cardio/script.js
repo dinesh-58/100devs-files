@@ -80,3 +80,10 @@ console.log("People sorted in ascending order of last name", people.sort());
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+console.log("Repeat count of each word:", data.reduce((acc, word) => {
+    // should reduce into an object?
+    acc[word] = acc[word] == undefined ? 1 : acc[word] + 1
+    return acc;
+}
+    , {} // initialize acc as empty object
+));
